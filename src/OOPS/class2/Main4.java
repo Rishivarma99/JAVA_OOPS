@@ -13,7 +13,7 @@ public class Main4 {
   // this is a inner class before this we have created all classes outside main4
   // now treat it as object this is not static now when we create a instance fo innserclass1 from a static public main
   // -> we know that in static methods we just cant call a object directly without instance similarly we
-    // cant call InnerClass1 from main without creating a obejct of class innserclass1
+    // cant call InnerClass1 from main without creating a obejct of class main4
     // solution : use static
     class InnerClass1{   //SIMPLY IT IS DEPENDENT ON MAIN4 CLASS SO NNED A INSTANCE OR SHOULD BE STATIC
       String name ;

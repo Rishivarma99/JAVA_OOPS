@@ -3,7 +3,7 @@ package OOPS.class2;
 /* ->Static keyword :
 *  -> Such objects which are not related o objects but in common for all objects must be initialed as static
 *  -> a static variable is not related to a objects varaibles
-*   -> In a staic method we cannot use any non static methods
+*   -> In a static method we cannot use any non static methods
 *  -> something which is not static belongs to object or instance
 * -> CLASSES IN SAME PACKAGE NO NEED TO IMPORT
 * */

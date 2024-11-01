@@ -22,6 +22,12 @@ import java.sql.SQLOutput;
  * ->PRIVATE KEYWORD : WHEN KEPT ONLY WE CAN ACCESS INSIDE THE CLASS
  *
  * ->WHEEVER WE ARE CREATING A CHILD OBJECT A PARENT CONSTRUCTOR MUST BE CALLED OTHER WISE A DEFUALT CONSTUCOR OF PARENT CLASS IS CALLED
+ *
+ *  ->*** STATIC AND OVERRIDING
+ *   -> staic methods cant be overrided in child classes
+ *   -> they can be inherited means from child class we can call static methods in parent class
+ *
+ *
  * */
 public class Main {
 
@@ -50,6 +56,17 @@ public class Main {
 //BoxWeight obj6 = new Box(2,3,4 ) ;  // ERROR : A CHIRD CLASS REFERENCE VARIABLE CAN NEVER POINT TO A PARENT CLASS
 // Y COZ HERE WHEN CREATING BOX THEN BOX CLASS DONT KNOW ABOUT WEIGHT VARAIBLE SO IT CANT INTIALIZE THAT VARIABLE SO WE CANT DO SO
 
+
+//        STATIC CLASS AND OVERRIDING
+        Box obj7  =  new BoxWeight() ;
+        obj7.Greeting() ; // here as the object is boxweight class method it should be called but box is being called
+        BoxWeight obj8  =  new BoxWeight() ;
+        obj8.Greeting();
+
+
+//        accesing private variable in box named l1
+        Box obj9 = new Box() ;
+        System.out.println(obj9.getl1()); // 0.0 is printed allowing us to acess l1 a private variable in box class
 
 
 

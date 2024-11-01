@@ -9,6 +9,10 @@ public class BoxWeight extends Box {
     BoxWeight(){
         this.weight = -1;
     }
+//    @Override   WE ARE UNABLE TO OVERIDE A STATIC METHOD
+    static void Greeting(){
+        System.out.println("Hi i am in boxweight class , Greeting");
+    }
 
     public BoxWeight(double length, double height, double width, double weight) {
 //        IF NO CONSTUCTOR TO PARENT CLASS CALLED THEN IT CALLS THE DEFUALT CONTRUCTOR OF PARENT CLASS

@@ -22,7 +22,7 @@ public class Main5 {
 
     public static void main(String[] args) {
 
-        final int a1 = 10; // we cant change
+        final int a1 = 10; // we can't change
 
         final Student5 rishi = new Student5("Rihsi"); // initialing a final object
 

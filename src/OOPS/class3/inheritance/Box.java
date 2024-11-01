@@ -1,7 +1,8 @@
 package OOPS.class3.inheritance;
 
 public class Box{
-//    private double l ;  // if it is kept private only we can use inside class
+//    this is data hiding
+    private double l1 ;  // if it is kept private only we can use inside class
     double h ;
     double l ; 
     double w  ;
@@ -11,6 +12,7 @@ public class Box{
         this.l = -1 ;
         this.h = -1 ;
         this.w = -1 ;
+        this.l1 = 0 ;
 
     }
     Box (double side){
@@ -38,8 +40,18 @@ public class Box{
         this.w  = old.w  ;
 
     }
+    public double getl1(){
+        return l1 ;  // here l1 is private but still we can use this methods and acces l1 in main
+    }
+
+//    STATIC METHODS AND CHECK OVERRIDING
+    static void Greeting(){
+        System.out.println("Hi i am in box class , Greeting");
+    }
     public void  boxMethod1 (){
         System.out.println("This is Box Mehtod 1 ");
+
+
     }
 
 }
